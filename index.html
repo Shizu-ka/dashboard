@@ -58,24 +58,24 @@
 	  <hr>
 	  <p>
 	  Shizuka © 2023 | 
-	  <a href="https://opensource.org/">
-		<span style="color: #ffd700;">Open Source</span>
+	  <a href="https://shizuka.my.id/">
+		<span style="color: #ffd700;">Home</span>
 	  </a>
 	</p>
 	</div>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Get the URL parameter values
+            //Get the URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const id = urlParams.get('id');
             const title = urlParams.get('title');
 
-            // Update the iframe src
+            //Update iframe src
             const iframe = document.getElementById('looker-iframe');
             iframe.src = `https://lookerstudio.google.com/embed/reporting/${id}`;
 
-            // Update the card title
+            //Update card title
             const cardTitle = document.getElementById('card-title');
             cardTitle.innerText = title;
         });
