@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colab Report</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+		a {
+		  text-decoration: none; 
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+		.card-title {
+		  color: #a6c9e9;
+		}
+        .custom-card {
+            text-align: center;
+            height: 700px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+        }
+		body {
+		  background-color: #333333; 
+		}
+		.custom-card {
+		  background-color: #555555; 
+		}
+		hr {
+		  border-top: 1px solid #ccc;  
+		}
+
+		.footer {
+		  text-align: center;
+		  padding: 10px;
+		}
+		.footer p {
+		  color: #a6c9e9;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h1 id="card-title" class="card-title">Colab Report</h1>
+						<script src="https://gist.github.com/Shizu-ka/96f1a3f9437f3d7d5913f1659c057ce2.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="footer text-center">
+	  <hr>
+	  <p>
+		Shizuka © 2023 | 
+		<a href="https://shizuka.my.id/">
+		  <span style="color: #ffd700;">Home</span>
+		</a>
+	  </p>
+	</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            //Get the URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('title');
+            //Update card title
+            const cardTitle = document.getElementById('card-title');
+            cardTitle.innerText = title;
+        });
+    </script>
+</body>
+</html>
